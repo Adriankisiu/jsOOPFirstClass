@@ -5,7 +5,7 @@ function Telefon(marka, cena, kolor, klawiatura) {
 	this.klawiatura = klawiatura;
 }
 Telefon.prototype.printInfo = function() {
-	console.log('Marka telefonu to ' + this.marka + ', kolor to ' + this.kolor + ', a cena to ' + this.cena + ' pln', "jaka klawiatura  - " + this.klawiatura + '.')
+	console.log('Marka telefonu to ' + this.marka + ', kolor to ' + this.kolor + ', a cena to ' + this.cena + ' pln', "jaka klawiatura  -  " + this.klawiatura + '.')
 }
 
 var iPhone6S = new Telefon('Samsung', 1000, 'czarny', 'dotykowa');
