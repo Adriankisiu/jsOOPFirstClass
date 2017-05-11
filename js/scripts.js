@@ -1,17 +1,17 @@
-function Telefon(marka, cena, kolor, klawiatura) {
-	this.marka = marka;
-	this.cena = cena;
-	this.kolor = kolor;
-	this.klawiatura = klawiatura;
+function telephone(brand, price, color, keyboard) {
+	this.brand = brand;
+	this.price = price;
+	this.color = color;
+	this.keyboard = keyboard;
 }
-Telefon.prototype.printInfo = function() {
-	console.log('Marka telefonu to ' + this.marka + ', kolor to ' + this.kolor + ', a cena to ' + this.cena + ' pln', "jaka klawiatura  - " + this.klawiatura + '.')
+telephone.prototype.printInfo = function() {
+	console.log('Marka telefonu to ' + this.brand + ', kolor to ' + this.color + ', a cena to ' + this.price + ' pln', "jaka klawiatura  -  " + this.keyboard + '.')
 }
 
-var iPhone6S = new Telefon('Samsung', 1000, 'czarny', 'dotykowa');
-var Nokia = new Telefon('klapka', 2.5, 'czerwony', 'bezdotykowa');
-var Sony = new Telefon('bez klapki', 1.5, 'żółty', 'napędzana myślami');
+var iPhone6S = new telephone('Samsung', 1000, 'czarny', 'dotykowa');
+var nokia = new telephone('klapka', 2.5, 'czerwony', 'bezdotykowa');
+var sony = new telephone('bez klapki', 1.5, 'żółty', 'napędzana myślami');
 
 iPhone6S.printInfo();
-Nokia.printInfo();
-Sony.printInfo();
+nokia.printInfo();
+sony.printInfo();
